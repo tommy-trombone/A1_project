@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>First HTML Web Page</title>
+    <link rel="shortcut icon" href="https://vignette.wikia.nocookie.net/donthugmeimscared/images/6/64/Favicon.ico/revision/latest?cb=20190206212533">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bangers&display=swap">
+    <link rel="stylesheet" type="text/css" href="css/style.production.css">
+</head>
+<body>
+    <!-- Header including the logo and the main navigation -->
+    <header class="page-header">
+        <!-- Add your logo here -->
+        <img src="img/logo.jpg" alt="Placeholer image for my logo" class="page-header__item profile_logo">
+        <nav class="main-navigation page-header__item">
+            <ul role="menubar" class="navigation-list">
+                <!--Navigation links -->
+                <li role="presentation">
+                <a href="index.html" role="menuitem" class="navigation-list__item">Home</a>
+                </li>
+                <li role="presentation">
+                    <a href="about.html" aria-label="About me" role="menuitem" class="navigation-list__item">About</a>
+                </li>
+                <li role="presentation">
+                    <a href="contact.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Contact</a>
+                </li>
+                <li role="presentation">
+                    <a href="work.html" role="menuitem" class="navigation-list__item">Work</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="contact-body">
+        <h1>
+            Contact details
+        </h1>
+        <div>
+            <h2>
+              You can reach me by these methods:<br>  
+            </h2>
+            <ul role="menubar">
+                <li role="presentation">
+                    <label>Tel:</label>
+                    <a href="tel:+6666666666" aria-label="Clickable link to start a telephone call" role="menuitem">+6666666</a>
+                </li>
+                <li role="presentation">
+                    <label>Skype:</label>
+                    <a role="menuitem" aria-label="A clickable link to make a Skype call" href="skype:live:thomasmichaelfrazer"> live:thomasmichaelfrazer</a>
+                </li>
+                <li role="presentation">
+                    <label>Email:</label>
+                    <a role="menuitem" href="mailto:thomasmichaelfrazer@gmail.com"> thomasmichaelfrazer@gmail.com</a>
+                </li>
+            </ul>
+            <a role="menuitem" aria-label="A clickable button to make a Skype call href="skype:live:thomasmichaelfrazer">
+            <button type="button">Let's connect</button>
+            </a>
+        </div>
+    </div>
+    <div id="contact-form-container">
+        <p>
+            You can also send through your contact details and leave a message with your project idea if that's your style: <br>
+        </p>
+        <form action="" method="post" id="contact-form">
+            <label class="standard-label" for="contact-email">E-mail*: </label>
+            <input type="email" id="contact-email" required>
+            <br>
+            <label class="standard-label" for="contact-tel">Telephone: </label>
+            <input type="tel" id="contact-tel">
+            <br>
+            <label class="standard-label" for="contact-msg" >Message*: </label>
+            <textarea maxlength="240" id="contact-msg" required></textarea>
+
+            <input type="submit" value="Send message">
+        </form>
+    </div>
+    <!-- Footer with links to social media profiles -->
+    <footer class="page-footer">
+        <p class="page-footer__item">
+            Find me on
+        </p>
+        <div class="page-footer__item social-container">
+            <a href ="" class="social-container__item"><img src="img/github.svg" alt="Github"></a> 
+            <a href="" class="social-container__item"><img src="img/twitter.svg" alt="Twitter"></a>
+            <a href="" class="social-container__item"><img src="img/linkedin.svg" alt="LinkedIn"></a>
+        </div>
+    </footer>
+<script src="js/tota11y.min.js"></script>
+</body>
+</html>
