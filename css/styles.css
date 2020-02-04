@@ -28,6 +28,7 @@ font-family: 'Bangers', 'cursive';
     --light-pink: #FFB6C1;
     --light-salmon: #FFA07A;
     --white: #fff;
+    --black: #000;
     --font-size-default: 16px;
     --max-width-full-size: 700px;
     --max-width-viewport-size: 320px;
@@ -187,7 +188,7 @@ a {
 }
 
 a:visited {
-    color: var(--dark-olive-green);
+    color: var(--black);
 }
 
 a:hover, a:focus {
