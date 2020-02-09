@@ -48,7 +48,7 @@ font-family: 'Bangers', 'cursive';
 }
 
 body {
-    background-image: url(https://fratzio.github.io/A1_project/img/marble.jpeg);
+    background-image: url(../img/marble.jpeg);
     background-size: cover; 
     background-color: var(--gainsboro);
     font-family: 'Bangers', 'cursive';
