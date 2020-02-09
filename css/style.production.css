@@ -480,26 +480,26 @@ thead {
 
 @media all and (max-width: 328px) {
 .img-mel {
-    max-width: 320px;
+    max-width: 328px;
     height: auto;
     }
 .profile {
-    max-width: 320px;
+    max-width: 328px;
     margin-left: 5px;
     margin-right: 5px;
     }
 .about-body {
-    max-width: 320px;
+    max-width: 328px;
     margin-left: 5px;
     margin-right: 5px;
     }
 .contact-body {
-    max-width: 320px;
+    max-width: 328px;
     margin-left: 5px;
     margin-right: 5px;
     }
 #contact-form-container {
-    max-width: 320px;
+    max-width: 328px;
     margin-left: 5px;
     margin-right: 5px;
     }
