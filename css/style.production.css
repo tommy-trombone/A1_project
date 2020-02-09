@@ -12,6 +12,8 @@ DarkOliveGreen: #556B2F;
 LavenderBlush: #FFF0F5;
 LightPink: #FFB6C1;
 LightSalmon: #FFA07A;
+SaddleBrown: #8B4513;
+Gainsboro: #DCDCDC;
 */
 
 /* 
@@ -25,16 +27,26 @@ font-family: 'Bangers', 'cursive';
 }
 
 body {
-    background-color: #FFE4B5;
+    background-image: url(https://fratzio.github.io/A1_project/A1_project/img/marble.jpeg);
+    background-size: cover; 
+    background-color: #DCDCDC;
     font-family: 'Bangers', 'cursive';
     font-size: 16px;
     font-weight: 400;
     line-height: 1.6;
+    text-shadow: .5px .5px #fff;
+}
+
+img {
+    height: auto;
+    width: 100%;
+    display: block;
+    vertical-align: middle;
 }
 
 .page-header {
-    -webkit-box-shadow: 0 2px 0 0 #E9967A;
-            box-shadow: 0 2px 0 0 #E9967A;
+    -webkit-box-shadow: 0 .5px 0 0 #fff;
+            box-shadow: 0 .5px 0 0 #fff;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -42,7 +54,7 @@ body {
         flex-wrap: nowrap;
     margin: 0 auto;
     padding: 20px;
-    border-bottom: 1px inset #8B0000;
+    border-bottom: .5px inset #000;
     width: 100%;
 }
 
@@ -115,13 +127,6 @@ body {
     max-width: 700px;
 }
 
-.img-mel-wrapper {
-    display: block;
-    width: 100%;
-    height: 100%;
-    vertical-align: middle;
-}
-
 .img-mel {
     max-width: 700px;
     height: auto;
@@ -175,8 +180,8 @@ body {
     width: 250px;
     margin-right: 40px;
     border-radius: 50%;
-    -webkit-box-shadow: 2px 2px 2px 2px #E9967A;
-            box-shadow: 2px 2px 2px 2px #E9967A;
+    -webkit-box-shadow: 2px 2px 2px 2px #000;
+            box-shadow: 2px 2px 2px 2px #000;
 }
 
 .profile_logo {
@@ -208,21 +213,17 @@ p {
 }
 
 a {
-    color: #8B0000;
-}
-
-a:visited {
-    color: #FF00FF;
+    color: #8B4513;
 }
 
 a:hover {
     text-decoration: none;
-    color: #E9967A;
+    color: #CD853F;
 }
 
 a:focus {
     text-decoration: none;
-    color: #E9967A;
+    color: #CD853F;
 }
 
 a:active {
@@ -233,11 +234,11 @@ button {
     border: none;
     font-family: inherit;
     background-color: #fff;
-    color: #8B0000;
+    color: #8B4513;
     text-decoration: none;
     padding: 10px;
     border-radius: 3px;
-    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+    border-bottom: 2px solid #000;
     -webkit-transition: 0.2s opacity;
     -o-transition: 0.2s opacity;
     transition: 0.2s opacity;
@@ -247,11 +248,11 @@ button {
     border: none;
     font-family: inherit;
     background-color: #fff;
-    color: #8B0000;
+    color: #8B4513;
     text-decoration: none;
     padding: 10px;
     border-radius: 3px;
-    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+    border-bottom: 2px solid #000;
     -webkit-transition: 0.2s opacity;
     -o-transition: 0.2s opacity;
     transition: 0.2s opacity;
@@ -286,6 +287,9 @@ button:focus,
     background-color: #fff;
     padding: 10px;
     width: auto;
+    color: #000;
+    text-shadow: .5px .5px #fff;
+    opacity: 0.6;
 }
 
 .grid__item:last-child {
@@ -295,6 +299,17 @@ button:focus,
     -ms-grid-row-span: 2;
     grid-row: 1 / 3;
 }
+
+.grid__item:hover {
+       border: 1px solid;
+       padding: 10px;
+       -webkit-box-shadow: 2px 2px #000;
+               box-shadow: 2px 2px #000;
+       -webkit-transition-duration: 0.1s;
+            -o-transition-duration: 0.1s;
+               transition-duration: 0.1s;
+       opacity: .8;
+     }
 
 thead {
     text-align: left;
@@ -442,9 +457,16 @@ thead {
     }
     h3 {
     font-size: 12px;
-}
+    }
     .navigation-list a  {
         font-size: 22px;
+    }
+    .profile, 
+    .about-body, 
+    .contact-body,
+    #contact-form-container {
+    margin-left: 5px;
+    margin-right: 5px;
     }
 }
 
@@ -480,7 +502,7 @@ thead {
 
 @media all and (max-width: 328px) {
 .img-mel {
-    max-width: 328px;
+    max-width: 100%;
     height: auto;
     }
 .profile {
