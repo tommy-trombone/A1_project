@@ -22,8 +22,10 @@ font-family: 'Bangers', 'cursive';
     --secondary-color: #E9967A;
     --sienna: #A0522D;
     --dark-red: #8B0000;
+    --fuscia: #FF00FF;
     --orange: #FFA500;
     --dark-olive-green: #556B2F;
+    --dark-salmon: #E9967A;
     --lavender-blush: #FFF0F5;
     --light-pink: #FFB6C1;
     --light-salmon: #FFA07A;
@@ -43,19 +45,19 @@ font-family: 'Bangers', 'cursive';
 body {
     background-color: var(--primary-color);
     font-family: 'Bangers', 'cursive';
-    font-weight: 400;
     font-size: var(--font-size-default);
+    font-weight: 400;
     line-height: 1.6;
 }
 
 .page-header {
-    display: flex;
-    width: 100%;
-    padding: 20px;
-    border-bottom: 1px inset var(--dark-red);
     box-shadow: 0 2px 0 0 var(--secondary-color);
+    display: flex;
     flex-wrap: nowrap;
     margin: var(--margin-default);
+    padding: 20px;
+    border-bottom: 1px inset var(--dark-red);
+    width: 100%;
 }
 
 .page-header__item {
@@ -97,15 +99,11 @@ body {
     margin: var(--margin-default);
 }
 
-.profile {
-}
-
 .body-img-mel {
     margin: var(--margin-default);
     display: border;
     text-align: center;
     max-width: var(--max-width-full-size);
-
 }
 
 .img-mel-wrapper {
@@ -188,11 +186,12 @@ a {
 }
 
 a:visited {
-    color: var(--black);
+    color: var(--fuscia);
 }
 
 a:hover, a:focus {
     text-decoration: none;
+    color: var(--dark-salmon);
 }
 
 a:active {
@@ -373,7 +372,7 @@ thead {
     }
 }
 
-@media all and (max-width: 320px) {
+@media all and (max-width: 328px) {
 .img-mel {
     max-width: var(--max-width-viewport-size);
     height: auto;
