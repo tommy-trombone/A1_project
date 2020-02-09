@@ -10,6 +10,8 @@ DarkOliveGreen: #556B2F;
 LavenderBlush: #FFF0F5;
 LightPink: #FFB6C1;
 LightSalmon: #FFA07A;
+SaddleBrown: #8B4513;
+Gainsboro: #DCDCDC;
 */
 
 /* 
@@ -26,9 +28,12 @@ font-family: 'Bangers', 'cursive';
     --orange: #FFA500;
     --dark-olive-green: #556B2F;
     --dark-salmon: #E9967A;
+    --gainsboro: #DCDCDC;
     --lavender-blush: #FFF0F5;
     --light-pink: #FFB6C1;
     --light-salmon: #FFA07A;
+    --saddle-brown:#8B4513;
+    --peru:#CD853F;
     --white: #fff;
     --black: #000;
     --font-size-default: 16px;
@@ -43,20 +48,30 @@ font-family: 'Bangers', 'cursive';
 }
 
 body {
-    background-color: var(--primary-color);
+    background-image: url(https://fratzio.github.io/A1_project/A1_project/img/marble.jpeg);
+    background-size: cover; 
+    background-color: var(--gainsboro);
     font-family: 'Bangers', 'cursive';
     font-size: var(--font-size-default);
     font-weight: 400;
     line-height: 1.6;
+    text-shadow: .5px .5px var(--white);
+}
+
+img {
+    height: auto;
+    width: 100%;
+    display: block;
+    vertical-align: middle;
 }
 
 .page-header {
-    box-shadow: 0 2px 0 0 var(--secondary-color);
+    box-shadow: 0 .5px 0 0 var(--white);
     display: flex;
     flex-wrap: nowrap;
     margin: var(--margin-default);
     padding: 20px;
-    border-bottom: 1px inset var(--dark-red);
+    border-bottom: .5px inset var(--black);
     width: 100%;
 }
 
@@ -106,13 +121,6 @@ body {
     max-width: var(--max-width-full-size);
 }
 
-.img-mel-wrapper {
-    display: block;
-    width: 100%;
-    height: 100%;
-    vertical-align: middle;
-}
-
 .img-mel {
     max-width: var(--max-width-full-size);
     height: auto;
@@ -150,7 +158,7 @@ body {
     width: 250px;
     margin-right: 40px;
     border-radius: 50%;
-    box-shadow: 2px 2px 2px 2px var(--secondary-color);
+    box-shadow: 2px 2px 2px 2px var(--black);
 }
 
 .profile_logo {
@@ -182,16 +190,12 @@ p {
 }
 
 a {
-    color: var(--dark-red);
-}
-
-a:visited {
-    color: var(--fuscia);
+    color: var(--saddle-brown);
 }
 
 a:hover, a:focus {
     text-decoration: none;
-    color: var(--dark-salmon);
+    color: var(--peru);
 }
 
 a:active {
@@ -202,11 +206,11 @@ button, .button {
     border: none;
     font-family: inherit;
     background-color: var(--white);
-    color: var(--dark-red);
+    color: var(--saddle-brown);
     text-decoration: none;
     padding: 10px;
     border-radius: 3px;
-    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+    border-bottom: 2px solid var(--black);
     transition: 0.2s opacity;
 }
 
@@ -237,12 +241,23 @@ button:focus,
     background-color: var(--white);
     padding: 10px;
     width: auto;
+    color: var(--black);
+    text-shadow: .5px .5px var(--white);
+    opacity: 0.6;
 }
 
 .grid__item:last-child {
     grid-column: 3 / 3;
     grid-row: 1 / 3;
 }
+
+.grid__item:hover {
+       border: 1px solid;
+       padding: 10px;
+       box-shadow: 2px 2px var(--black);
+       transition-duration: 0.1s;
+       opacity: .8;
+     }
 
 thead {
     text-align: left;
@@ -339,9 +354,16 @@ thead {
     }
     h3 {
     font-size: 12px;
-}
+    }
     .navigation-list a  {
         font-size: 22px;
+    }
+    .profile, 
+    .about-body, 
+    .contact-body,
+    #contact-form-container {
+    margin-left: 5px;
+    margin-right: 5px;
     }
 }
 
@@ -374,7 +396,7 @@ thead {
 
 @media all and (max-width: 328px) {
 .img-mel {
-    max-width: var(--max-width-viewport-size);
+    max-width: 100%;
     height: auto;
     }
 .profile, 
