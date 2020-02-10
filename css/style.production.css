@@ -32,7 +32,7 @@ body {
     background-color: #DCDCDC;
     font-family: 'Bangers', 'cursive';
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 150;
     line-height: 1.6;
     text-shadow: .5px .5px #fff;
 }
@@ -288,7 +288,6 @@ button:focus,
     padding: 10px;
     width: auto;
     color: #000;
-    text-shadow: .5px .5px #fff;
     opacity: 0.6;
 }
 
