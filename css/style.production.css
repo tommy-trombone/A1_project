@@ -291,6 +291,7 @@ button:focus,
   width: auto;
   color: #000;
   opacity: 0.6;
+  text-align: center;
 }
 
 .grid__item:last-child {
@@ -309,7 +310,14 @@ button:focus,
   -webkit-transition-duration: 0.1s;
   -o-transition-duration: 0.1s;
   transition-duration: 0.1s;
-  opacity: 0.8;
+  opacity: 0.9;
+}
+
+.grid__item img {
+  height: 500px;
+  width: 500px;
+  margin: auto;
+  margin-top: 20px;
 }
 
 thead {
@@ -429,8 +437,8 @@ thead {
 
 /* Media query for displays smaller than 500px */
 /* "all" specifices to which media it should be applied
-      Other possible values include screen, print, and speech (the value all encompasses all of these).
-   */
+    Other possible values include screen, print, and speech (the value all encompasses all of these).
+ */
 
 @media all and (min-width: 500px) and (max-width: 750px) {
   .grid {
@@ -475,6 +483,10 @@ thead {
   }
   .navigation-list a {
     font-size: 18px;
+  }
+  .grid__item img {
+    height: 200px;
+    width: 200px;
   }
 }
 
