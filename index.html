@@ -20,6 +20,7 @@
     <link
       href="https://fonts.googleapis.com/css2?family=IM+Fell+DW+Pica+SC&display=swap"
       rel="stylesheet">
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
   </head>
   <body>
@@ -29,19 +30,13 @@
         <ul role="menubar" class="navigation-list">
           <!--Navigation links -->
           <li role="presentation">
-            <a
-              href="index.html"
-              role="menuitem"
-              class="navigation-list__item navigation-list__item--active">Home</a>
+            <a href="#languages-body" role="menuitem" class="navigation-list__item">Work</a>
           </li>
           <li role="presentation">
             <a href="#contact-body" role="menuitem"
               class="navigation-list__item">Contact</a>
           </li>
-          <li role="presentation">
-            <a href="#languages-body" role="menuitem"
-              class="navigation-list__item">Work</a>
-          </li>
+          
         </ul>
       </nav>
     </header>
@@ -65,22 +60,31 @@
             write
             and create in various modes and forms.
             <br />
+            <br/>
+            I am passionate about learning how coding and data can help support and empower communities and peoples around the world.
+            <br/>
             <br />
-            I am passionate about learning how coding languages can help broaden
-            the
-            depth and limits of my creativity and expression. And how it can
-            help
-            me
-            allow others to express themselves creatively.
-          </p>
-
+          </p>          
         </section>
+        <section class="cta-section">
+          <h3>Check out my work below</h3>
+        </section>
+        <section>
+          <a href="#languages-body" role="link" class="about-link"><div class="arrow">
+            <span></span>
+            <span></span>
+            <span></span>
+          
+          </div></a>
+          
+        </section>
+        
       </div>
       <div class="container-languages">
         <section id="languages-body">
           <p class="languages-body__item">Language Proficency</p>
           <div class="languages-body__item languages-container">
-            <div
+            <div 
               class="languages-container__item" data-toggle="tooltip"
               animation="true"
               data-placement="auto" title="CSS 2yrs">
@@ -139,40 +143,40 @@
           </h1>
           <div class="grid">
             <!-- Grid items will live here -->
-            <div class="grid__item" data-toggle="modal"
+            <div data-aos="zoom-in-right" aos-duration="3000" class="grid__item" data-toggle="modal"
               data-target="#workModal">
               <img id="pokedex-app" class="project__img" src="img/pokedex.png"
                 alt="A
                 photo
                 of My Pokedex app project">
             </div>
-            <div class="grid__item" data-toggle="modal"
+            <div data-aos="zoom-in" aos-duration="3000" class="grid__item" data-toggle="modal"
               data-target="#workModal">
               <img id="movie-app" class="project_img" src="img/movie_app.png"
                 alt="A
                 photo
                 of My movie app project">
             </div>
-            <div class="grid__item" data-toggle="modal"
+            <div data-aos="zoom-in-left" aos-duration="3000" class="grid__item" data-toggle="modal"
               data-target="#workModal">
-              <img id="quiz-app" class="project_img" src="img/quiz_app.png"
+              <img id="quiz-app" class="project_img" src="img/trivia.png"
                 alt="A
                 photo
                 of My quiz app project">
             </div>
-            <div class="grid__item" data-toggle="modal"
+            <div data-aos="zoom-in-right" aos-duration="3000" class="grid__item" data-toggle="modal"
               data-target="#workModal">
               <img id="to-do" class="project_img" src="img/to_do.png" alt="A
                 photo
                 of My to-do app project">
             </div>
-            <div class="grid__item" data-toggle="modal"
+            <div data-aos="zoom-in" aos-duration="3000" class="grid__item" data-toggle="modal"
               data-target="#workModal">
               <img id="meetup" class="project_img" src="img/meetup.png" alt="A
                 photo
                 of My meetup app project">
             </div>
-            <div class="grid__item" data-toggle="modal"
+            <div data-aos="zoom-in-left" aos-duration="3000" class="grid__item"  data-toggle="modal"
               data-target="#workModal">
               <img id="chat-app" class="project_img" src="img/chat_app.png"
                 alt="A
@@ -206,16 +210,12 @@
               <div class="modal-text text-center"></div>
             </div>
             <div class="modal-footer">
-              <a id="button-code" class="btn btn-primary call-to-action"
+              <a id="button-code" class="btn btn-code call-to-action"
                 href="#"
                 role="button" target="_blank">Code</a>
-              <a id="button-demo" class="btn btn-warning call-to-action"
+              <a id="button-demo" class="btn btn-demo call-to-action"
                 href="#"
                 role="button" target="_blank">Demo</a>
-              <button type="button" class="btn btn-danger call-to-action"
-                data-dismiss="modal">
-                Close
-              </button>
             </div>
           </div>
         </div>
@@ -250,6 +250,7 @@
         </section>
       </div>
 
+      
       <!-- Will add backed to contact form later  -->
 
       <!-- <div id="contact-form-container">
@@ -288,6 +289,10 @@
       </div>
     </footer>
     <!-- Scripts -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
       integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
       crossorigin="anonymous"></script>

@@ -37,7 +37,7 @@ $(document).ready(function () {
   $('#quiz-app').on('click', () => {
     var targetSelector = $(this).attr('data-target');
     $('#workModal .modal-title').text('Quiz app');
-    $('#workModal #img').attr('src', 'img/quiz_app.png');
+    $('#workModal #img').attr('src', 'img/trivia.png');
     $('#workModal .modal-text').text(
       'A basic quiz app using Angular and TypeScript'
     );
@@ -57,7 +57,7 @@ $(document).ready(function () {
     $('#workModal .modal-title').text('To-do');
     $('#workModal #img').attr('src', 'img/to_do.png');
     $('#workModal .modal-text').text(
-      'A basic To-Do list application using Vue.js and implementing the design pattern (MVVM) and Material Design via Vue Material.'
+      'A To-Do list application using Vue.js and implementing the design pattern (MVVM) and Material Design via Vue Material. Includes local storage functionality to save your list for later.'
     );
     $('#workModal #button-code').attr(
       'href',
@@ -75,7 +75,7 @@ $(document).ready(function () {
     $('#workModal .modal-title').text('Meet up');
     $('#workModal #img').attr('src', 'img/meetup.png');
     $('#workModal .modal-text').text(
-      'A serverless, progressive web application (PWA) with React using a test-driven development (TDD) technique. The application uses the Meetup API to fetch upcoming events for a selected city. Leveraging rechart library graphs for visualistion fo data.'
+      'A serverless, progressive web application (PWA) with React using a test-driven development (TDD) technique. The application uses the Meetup API to fetch upcoming events for a selected city. Leveraging rechart library graphs for visualistion of data.'
     );
     $('#workModal #button-code').attr(
       'href',
