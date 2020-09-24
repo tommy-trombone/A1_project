@@ -108,8 +108,7 @@ img {
 
 .container_profile,
 .container_work,
-.container_contact,
-.contact-languages {
+.container_contact {
   margin-top: 250px;
   margin-bottom: 250px;
 }
@@ -202,7 +201,15 @@ img {
 .page-footer__item {
   flex: 0 1 20px;
 }
-
+#contact-body {
+  text-align: center;
+}
+.contact-styles li {
+  list-style: none;
+}
+.page-footer {
+  margin-top: 20px;
+}
 .page-footer__item:first-child {
   text-align: center;
 }
@@ -376,19 +383,6 @@ thead {
 
 /* End Modal styling */
 
-.tooltip {
-  background-color: white;
-}
-
-.tooltip-inner {
-  max-width: 200px;
-  padding: 3px 8px;
-  color: #fff;
-  text-align: center;
-  background-color: #000;
-  border-radius: 0.25rem;
-}
-
 /* 
 Arrow styling start
 */
@@ -430,10 +424,6 @@ Arrow styling start
 /* 
 Arrow styling end
 */
-
-/* Animation start */
-
-/* Animation start */
 
 /* Media styling goes at the very end of CSS file */
 
@@ -490,35 +480,119 @@ Arrow styling end
   }
 }
 
-@media all and (max-width: 550px) {
+@media all and (max-width: 420px) {
+  .body {
+    text-align: center;
+    justify-content: center;
+  }
+  h3 {
+    font-size: small;
+  }
+  h2 {
+    font-size: smalls;
+  }
+
+  p {
+    font-size: large;
+  }
   .navigation-list a {
-    font-size: var(--font-size-default);
+    font-size: large;
   }
   .navigation-list li {
-    margin-left: 5px;
+    margin-bottom: -20px;
   }
   .navigation-list {
-    justify-content: flex-start;
+    padding-left: 0px;
+    margin-top: -20px;
   }
-}
-
-@media all and (min-width: 322px) and (max-width: 349px) {
+  /* .navigation-list {
+    justify-content: flex-start;
+  } */
+  .page-header {
+    height: 60px;
+  }
   .profile__portrait {
     float: unset;
-  }
-}
-
-@media all and (max-width: 328px) {
-  .img-mel {
-    max-width: 100%;
-    height: auto;
+    width: 180px;
+    height: 250px;
   }
   .profile,
   #about-body,
   #contact-body,
   #contact-form-container {
-    max-width: var(--max-width-viewport-size);
-    margin-left: 5px;
-    margin-right: 5px;
+    max-width: auto;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  #about-body {
+    margin-bottom: -10px;
+  }
+  .grid__item {
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: var(--black);
+    text-align: center;
+    width: 8em;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.8),
+      0 12px 40px 0 rgba(0, 0, 0, 0.76);
+  }
+  .container_profile {
+    margin-top: 20px;
+    align-items: center;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    max-height: 450px;
+  }
+  .profile__portrait {
+    margin: auto;
+  }
+  .container-languages {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .arrow span {
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-bottom: 5px solid var(--black);
+    border-right: 5px solid var(--black);
+    transform: rotate(45deg);
+    margin: -5px;
+    animation: animate 2s infinite;
+  }
+  .arrow {
+    top: 95%;
+  }
+  @keyframes animate {
+    0% {
+      opacity: 0;
+      transform: rotate(45deg) translate(-10px, -10px);
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+      transform: rotate(45deg) translate(10px, 10px);
+    }
+  }
+  .languages-body__item:first-child {
+    font-size: var(--font-size-default);
+  }
+  #contact-body {
+    text-align: center;
+  }
+  .contact-styles {
+    font-size: large;
+  }
+
+  .contact-title {
+    font-size: large;
+  }
+  .img-wrapper {
+    height: 300px;
+    width: 300px;
+    margin: auto;
   }
 }
