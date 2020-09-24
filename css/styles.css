@@ -94,12 +94,13 @@ img {
 }
 
 .navigation-list__item {
-  font-size: 25px;
+  font-size: 30px;
 }
 
 .navigation-list li {
   display: inline-block;
   margin-left: 15px;
+  margin-right: 15px;
 }
 
 .navigation-list__item--active {
@@ -500,6 +501,7 @@ Arrow styling end
   }
   .navigation-list li {
     margin-bottom: -20px;
+    margin-right: 5px;
   }
   .navigation-list {
     padding-left: 0px;
