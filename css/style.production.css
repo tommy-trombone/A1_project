@@ -158,6 +158,14 @@ img {
   text-align: center;
 }
 
+.check-out-link {
+  color: #000;
+}
+
+.check-out-link:hover {
+  color: #8b4513;
+}
+
 .languages-body {
   clear: both;
   display: -webkit-box;
@@ -207,6 +215,9 @@ img {
 #work-body {
   margin: 4em;
   text-align: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .page-footer {
@@ -369,6 +380,7 @@ button:focus,
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 1em;
   margin: auto;
+  text-align: center;
 }
 
 .grid__item {
@@ -645,50 +657,10 @@ Arrow styling end
     margin-right: 10px;
   }
   .arrow span {
-    display: block;
-    width: 10px;
-    height: 10px;
-    border-bottom: 5px solid #000;
-    border-right: 5px solid #000;
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
-    margin: -5px;
-    -webkit-animation: animate 2s infinite;
-    animation: animate 2s infinite;
+    display: none;
   }
   .arrow {
-    top: 95%;
-  }
-  @-webkit-keyframes animate {
-    0% {
-      opacity: 0;
-      -webkit-transform: rotate(45deg) translate(-10px, -10px);
-      transform: rotate(45deg) translate(-10px, -10px);
-    }
-    50% {
-      opacity: 1;
-    }
-    100% {
-      opacity: 0;
-      -webkit-transform: rotate(45deg) translate(10px, 10px);
-      transform: rotate(45deg) translate(10px, 10px);
-    }
-  }
-  @keyframes animate {
-    0% {
-      opacity: 0;
-      -webkit-transform: rotate(45deg) translate(-10px, -10px);
-      transform: rotate(45deg) translate(-10px, -10px);
-    }
-    50% {
-      opacity: 1;
-    }
-    100% {
-      opacity: 0;
-      -webkit-transform: rotate(45deg) translate(10px, 10px);
-      transform: rotate(45deg) translate(10px, 10px);
-    }
+    display: none;
   }
   .languages-body__item:first-child {
     font-size: 24px;

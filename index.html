@@ -20,7 +20,7 @@
     <link
       href="https://fonts.googleapis.com/css2?family=IM+Fell+DW+Pica+SC&display=swap"
       rel="stylesheet">
-      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" type="text/css" href="css/style.production.css" />
   </head>
   <body>
@@ -30,13 +30,14 @@
         <ul role="menubar" class="navigation-list">
           <!--Navigation links -->
           <li role="presentation">
-            <a href="#languages-body" role="menuitem" class="navigation-list__item">Work</a>
+            <a href="#languages-body" role="menuitem"
+              class="navigation-list__item">Work</a>
           </li>
           <li role="presentation">
             <a href="#contact-body" role="menuitem"
               class="navigation-list__item">Contact</a>
           </li>
-          
+
         </ul>
       </nav>
     </header>
@@ -61,172 +62,192 @@
             and create in various modes and forms.
             <br />
             <br/>
-            I am passionate about learning how coding and data can help support and empower communities and peoples around the world.
-            <br/>
-            <br />
-          </p>          
-        </section>
-        <section class="cta-section">
-          <h3>Check out my work below</h3>
-        </section>
-        <section>
-          <a href="#languages-body" role="link" class="about-link"><div class="arrow">
-            <span></span>
-            <span></span>
-            <span></span>
-          
-          </div></a>
-          
-        </section>
-        
-      </div>
-      <div class="container-languages">
-        <section id="languages-body">
-          <h3 class="languages-body__item">Language Proficency</h3>
-          <div class="languages-body__item languages-container">
-            <div 
-              class="languages-container__item" >
-              <img src="img/css.svg"
-                alt="CSS3" /></div>
-            <div
-              class="languages-container__item" title="HTML 2yrs"><img src="img/html5.svg"
-                alt="HTML5" /></div>
-            <div
-              class="languages-container__item" title="React 1yr"><img src="img/react.svg"
-                alt="React" /></div>
-            <div
-              class="languages-container__item" title="Python 4yrs"><img
-                src="img/python.svg"
-                alt="Python" /></div>
-            <div class="languages-container__item" title="Angular 1yr"><img
-                src="img/angular.svg" alt="Angular" /></div>
-            <div
-              class="languages-container__item" title="Vue 1yr"><img src="img/vue.svg"
-                alt="vue" /></div>
+              I am passionate about learning how coding and data can help
+              support and empower communities and peoples around the world.
+              <br/>
+                <br />
+              </p>
+            </section>
+            <section class="cta-section">
+              <a href="#languages-body" role="menuitem"
+                class="check-out-link">Check out my work
+                below</a>
+            </section>
+            <section>
+              <a href="#languages-body" role="link" class="about-link"><div
+                  class="arrow">
+                  <span></span>
+                  <span></span>
+                  <span></span>
 
-            <div
-              class="languages-container__item" title="MongoDB 1yr"><img
-                src="img/mongodb.svg"
-                alt="MongoDb" /></div>
-            <div
-              class="languages-container__item" title="React Native 1yr"><img
-                src="img/react-native.svg"
-                alt="React Native" /></div>
-            <div class="languages-container__item" title="Node 1yr"><img src="img/nodejs.svg"
-                alt="Nodejs" /></div>
-          </div>
-        </section>
-      </div>
-      <!-- Work section -->
-      <div class="container-work">
-        <section id="work-body">
-          <h1>
-            Work
-          </h1>
-          <div class="grid">
-            <!-- Grid items will live here -->
-            <div data-aos="zoom-in-right" aos-duration="3000" class="grid__item" data-toggle="modal"
-              data-target="#workModal">
-              <img id="pokedex-app" class="project__img" src="img/pokedex.png"
-                alt="A
-                photo
-                of My Pokedex app project">
-            </div>
-            <div data-aos="zoom-in" aos-duration="3000" class="grid__item" data-toggle="modal"
-              data-target="#workModal">
-              <img id="movie-app" class="project_img" src="img/movie_app.png"
-                alt="A
-                photo
-                of My movie app project">
-            </div>
-            <div data-aos="zoom-in-left" aos-duration="3000" class="grid__item" data-toggle="modal"
-              data-target="#workModal">
-              <img id="quiz-app" class="project_img" src="img/trivia.png"
-                alt="A
-                photo
-                of My quiz app project">
-            </div>
-            <div data-aos="zoom-in-right" aos-duration="3000" class="grid__item" data-toggle="modal"
-              data-target="#workModal">
-              <img id="to-do" class="project_img" src="img/to_do.png" alt="A
-                photo
-                of My to-do app project">
-            </div>
-            <div data-aos="zoom-in" aos-duration="3000" class="grid__item" data-toggle="modal"
-              data-target="#workModal">
-              <img id="meetup" class="project_img" src="img/meetup.png" alt="A
-                photo
-                of My meetup app project">
-            </div>
-            <div data-aos="zoom-in-left" aos-duration="3000" class="grid__item"  data-toggle="modal"
-              data-target="#workModal">
-              <img id="chat-app" class="project_img" src="img/chat_app.png"
-                alt="A
-                photo
-                of My chat app project">
-            </div>
-          </div>
-        </section>
-      </div>
+                </div></a>
 
-      <!-- Modal  -->
-      <div class="modal fade" tabindex="-1" role="dialog" id="workModal"
-        aria-labelledby="#workModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h2 class="modal-title" id="workModalLabel">
-              </h5>
-              <button type="button" class="close" data-dismiss="modal"
-                aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              <div class="img-wrapper">
-                <img id="img" src="" class="img-fluid rounded mx-auto d-block"
-                  alt="Responsive image" />
+            </section>
+
+          </div>
+          <div class="container-languages">
+            <section id="languages-body">
+              <h3 class="languages-body__item">Language Proficency</h3>
+              <div class="languages-body__item languages-container">
+                <div
+                  class="languages-container__item">
+                  <img src="img/css.svg"
+                    alt="CSS3" /></div>
+                <div
+                  class="languages-container__item" title="HTML 2yrs"><img
+                    src="img/html5.svg"
+                    alt="HTML5" /></div>
+                <div
+                  class="languages-container__item" title="React 1yr"><img
+                    src="img/react.svg"
+                    alt="React" /></div>
+                <div
+                  class="languages-container__item" title="Python 4yrs"><img
+                    src="img/python.svg"
+                    alt="Python" /></div>
+                <div class="languages-container__item" title="Angular 1yr"><img
+                    src="img/angular.svg" alt="Angular" /></div>
+                <div
+                  class="languages-container__item" title="Vue 1yr"><img
+                    src="img/vue.svg"
+                    alt="vue" /></div>
+
+                <div
+                  class="languages-container__item" title="MongoDB 1yr"><img
+                    src="img/mongodb.svg"
+                    alt="MongoDb" /></div>
+                <div
+                  class="languages-container__item" title="React Native 1yr"><img
+                    src="img/react-native.svg"
+                    alt="React Native" /></div>
+                <div class="languages-container__item" title="Node 1yr"><img
+                    src="img/nodejs.svg"
+                    alt="Nodejs" /></div>
               </div>
+            </section>
+          </div>
+          <!-- Work section -->
+          <div class="container-work">
+            <section id="work-body">
+              <h1>
+                Work
+              </h1>
+              <div class="grid">
+                <!-- Grid items will live here -->
+                <div data-aos="zoom-in-right" aos-duration="3000"
+                  class="grid__item" data-toggle="modal"
+                  data-target="#workModal">
+                  <img id="pokedex-app" class="project__img"
+                    src="img/pokedex.png"
+                    alt="A
+                    photo
+                    of My Pokedex app project">
+                </div>
+                <div data-aos="zoom-in" aos-duration="3000" class="grid__item"
+                  data-toggle="modal"
+                  data-target="#workModal">
+                  <img id="movie-app" class="project_img"
+                    src="img/movie_app.png"
+                    alt="A
+                    photo
+                    of My movie app project">
+                </div>
+                <div data-aos="zoom-in-left" aos-duration="3000"
+                  class="grid__item" data-toggle="modal"
+                  data-target="#workModal">
+                  <img id="quiz-app" class="project_img" src="img/trivia.png"
+                    alt="A
+                    photo
+                    of My quiz app project">
+                </div>
+                <div data-aos="zoom-in-right" aos-duration="3000"
+                  class="grid__item" data-toggle="modal"
+                  data-target="#workModal">
+                  <img id="to-do" class="project_img" src="img/to_do.png" alt="A
+                    photo
+                    of My to-do app project">
+                </div>
+                <div data-aos="zoom-in" aos-duration="3000" class="grid__item"
+                  data-toggle="modal"
+                  data-target="#workModal">
+                  <img id="meetup" class="project_img" src="img/meetup.png"
+                    alt="A
+                    photo
+                    of My meetup app project">
+                </div>
+                <div data-aos="zoom-in-left" aos-duration="3000"
+                  class="grid__item" data-toggle="modal"
+                  data-target="#workModal">
+                  <img id="chat-app" class="project_img" src="img/chat_app.png"
+                    alt="A
+                    photo
+                    of My chat app project">
+                </div>
+              </div>
+            </section>
+          </div>
 
-              <div class="modal-text text-center"></div>
-            </div>
-            <div class="modal-footer">
-              <a id="button-code" class="btn btn-code call-to-action"
-                href="#"
-                role="button" target="_blank">Code</a>
-              <a id="button-demo" class="btn btn-demo call-to-action"
-                href="#"
-                role="button" target="_blank">Demo</a>
+          <!-- Modal  -->
+          <div class="modal fade" tabindex="-1" role="dialog" id="workModal"
+            aria-labelledby="#workModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h2 class="modal-title" id="workModalLabel">
+                  </h5>
+                  <button type="button" class="close" data-dismiss="modal"
+                    aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <div class="img-wrapper">
+                    <img id="img" src="" class="img-fluid rounded mx-auto
+                      d-block"
+                      alt="Responsive image" />
+                  </div>
+
+                  <div class="modal-text text-center"></div>
+                </div>
+                <div class="modal-footer">
+                  <a id="button-code" class="btn btn-code call-to-action"
+                    href="#"
+                    role="button" target="_blank">Code</a>
+                  <a id="button-demo" class="btn btn-demo call-to-action"
+                    href="#"
+                    role="button" target="_blank">Demo</a>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
-      <!-- Modal end -->
+          <!-- Modal end -->
 
-      <!-- Contact section -->
-      <div class="container-contact">
-        <section id="contact-body">
-          <h3 class="contact-title">
-            Contact details
-          </h3>
-          <div class="contact-styles">
-            <ul role="menubar">
-              <li role="presentation">
-                <label>Email:</label>
-                <a role="menuitem" href="mailto:thomasmichaelfrazer@gmail.com">
-                  thomasmichaelfrazer@gmail.com</a>
-              </li>
-            </ul>
-            <a href="files/CV-2020.pdf" class="button" download>Download my CV</a>
+          <!-- Contact section -->
+          <div class="container-contact">
+            <section id="contact-body">
+              <h3 class="contact-title">
+                Contact details
+              </h3>
+              <div class="contact-styles">
+                <ul role="menubar">
+                  <li role="presentation">
+                    <label>Email:</label>
+                    <a role="menuitem"
+                      href="mailto:thomasmichaelfrazer@gmail.com">
+                      thomasmichaelfrazer@gmail.com</a>
+                  </li>
+                </ul>
+                <a href="files/CV-2020.pdf" class="button" download>Download my
+                  CV</a>
+              </div>
+            </section>
           </div>
-        </section>
-      </div>
 
-      
-      <!-- Will add backed to contact form later  -->
 
-      <!-- <div id="contact-form-container">
+          <!-- Will add backed to contact form later  -->
+
+          <!-- <div id="contact-form-container">
                 <p>
                     You can also send through your contact details and leave a
                     message with your project idea if that's your style: <br>
@@ -246,38 +267,39 @@
                     <input type="submit" value="Send message">
                 </form>
             </div> -->
-    </div>
-    <!-- Footer with links to social media profiles -->
-    <footer class="page-footer">
-      <p class="page-footer__item">Find me on</p>
-      <div class="page-footer__item social-container">
-        <a href="https://github.com/fratzio/" class="social-container__item"><img
-            src="img/github.svg" alt="Github"
-            /></a>
-        <a
-          href="https://www.linkedin.com/in/thomasfrazer/"
-          class="social-container__item"><img src="img/linkedin.svg"
-            alt="LinkedIn"
-            /></a>
-      </div>
-    </footer>
-    <!-- Scripts -->
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
+        </div>
+        <!-- Footer with links to social media profiles -->
+        <footer class="page-footer">
+          <p class="page-footer__item">Find me on</p>
+          <div class="page-footer__item social-container">
+            <a href="https://github.com/fratzio/"
+              class="social-container__item"><img
+                src="img/github.svg" alt="Github"
+                /></a>
+            <a
+              href="https://www.linkedin.com/in/thomasfrazer/"
+              class="social-container__item"><img src="img/linkedin.svg"
+                alt="LinkedIn"
+                /></a>
+          </div>
+        </footer>
+        <!-- Scripts -->
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
       AOS.init();
     </script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-      crossorigin="anonymous"></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-      crossorigin="anonymous"></script>
-    <script src="js/script.js"></script>
-    <script src="js/tota11y.min.js"></script>
-  </body>
-</html>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+          integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+          crossorigin="anonymous"></script>
+        <script
+          src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+          integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+          crossorigin="anonymous"></script>
+        <script
+          src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+          integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+          crossorigin="anonymous"></script>
+        <script src="js/script.js"></script>
+        <script src="js/tota11y.min.js"></script>
+      </body>
+    </html>
