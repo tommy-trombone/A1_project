@@ -14,7 +14,7 @@ $(document).ready(function () {
     );
     $('#workModal #button-demo').attr(
       'href',
-      'https://fratzio.github.io/pokedex_jquery/'
+      'https://crocgaze.com/pokedex_jquery/'
     );
     $(targetSelector).modal('show');
   });
@@ -45,10 +45,7 @@ $(document).ready(function () {
       'href',
       'https://github.com/fratzio/quiz_app'
     );
-    $('#workModal #button-demo').attr(
-      'href',
-      'https://fratzio.github.io/quiz_app/'
-    );
+    $('#workModal #button-demo').attr('href', 'https://crocgaze.com/quiz_app/');
     $(targetSelector).modal('show');
   });
   // to-do event handler
@@ -63,10 +60,7 @@ $(document).ready(function () {
       'href',
       'https://github.com/fratzio/to-do/'
     );
-    $('#workModal #button-demo').attr(
-      'href',
-      'https://fratzio.github.io/to-do'
-    );
+    $('#workModal #button-demo').attr('href', 'https://crocgaze.com/to-do');
     $(targetSelector).modal('show');
   });
   // meetup event handler
@@ -81,10 +75,7 @@ $(document).ready(function () {
       'href',
       'https://github.com/fratzio/meetup/'
     );
-    $('#workModal #button-demo').attr(
-      'href',
-      'https://fratzio.github.io/meetup'
-    );
+    $('#workModal #button-demo').attr('href', 'https://crocgaze.com/meetup');
     $(targetSelector).modal('show');
   });
   // chat app event handler
